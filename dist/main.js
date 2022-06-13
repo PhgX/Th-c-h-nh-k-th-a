@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Circle_1 = require("./Circle");
+const Rectangle_1 = require("./Rectangle");
+const shape_1 = require("./shape");
+const Square_1 = require("./Square");
+let shape = new shape_1.Shape('red', true);
+console.log(shape.toString());
+console.log(shape);
+let circle = new Circle_1.Circle('yellow', false, 50);
+console.log(circle);
+console.log(circle.toString());
+console.log(circle.getArea());
+console.log(circle.getPerimeter());
+let rect = new Rectangle_1.Rectangle(20, 40, 'red', true);
+console.log(rect);
+console.log(rect.getRectArea());
+console.log(rect.getRectPerimeter());
+console.log(rect.toString());
+let square = new Square_1.Square(5, 'Orange', true);
+console.log(square);
+console.log(square.getSquareArea());
+console.log(square.getSquarePerimeter());
+console.log(square.toString());
+//# sourceMappingURL=main.js.map
